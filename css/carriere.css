@@ -1,0 +1,48 @@
+.équipes {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+.équipes h1 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    font-weight: bold
+}
+.titres {
+    width: 300px;
+    background-color: white;
+    font-size: 1.2em;
+}
+td,th{
+    border: 2px solid darkblue;
+}
+.logoÉquipe {
+    width: 15%;
+}
+.sitesÉquipes {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+ul {
+    list-style-type: none;
+    align-items: center;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+
+

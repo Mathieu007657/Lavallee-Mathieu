@@ -1,0 +1,77 @@
+.main {
+    min-width: 400px;
+}
+.calendarContainer {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.title {
+    flex: 100%;
+    font-size: 3em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.months {
+    padding: 5px;
+    gap: 5px;
+    display: grid;
+    flex-direction: row;
+    margin-right: 5px;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.month {
+    flex: 25%;
+    border-radius: 30px;
+    background-color: darkblue;
+    width: calc(min(100%, 1400px));
+}
+.monthTitle {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: darkgrey;
+}
+.holiday {
+    color: red;
+}
+.guyDays {
+    color: orange;
+}
+
+.daysContainer,
+.daysOfWeek {
+    margin: 10px;
+    grid-template-columns: 15% 15% 15% 15% 15% 15% 15%;
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+    display: grid;
+}
+@media screen and (max-width: 900px) {
+    .months {
+        gap: 10px;
+        grid-template-columns: 50% 50%;
+        display: grid;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .month {
+        flex: 50%;
+        width: calc(min(100%, 800px));
+    }
+}
+@media screen and (max-width: 500px) {
+    .months {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .month {
+        flex: 100%;
+        width: calc(min(100%, 400px));
+    }
+}
